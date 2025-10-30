@@ -37,3 +37,7 @@
 	--heading3: 700 20px / 1.2 var(--font-family);
 	--heading4: 700 16px / 1.2 var(--font-family);
 }
+
+body {
+	overflow: hidden;
+}

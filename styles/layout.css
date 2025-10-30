@@ -1,0 +1,30 @@
+.app {
+	display: grid;
+	/* 656px 624px */
+	/* (656*100)/1280 (624*100)/1280 */
+	grid-template-columns: 51.25% 48.75%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+main {
+	overflow: auto;
+	padding: 4rem; /* 64px */
+
+	/* IMPORTANT! */
+	/* Some browsers do not support CSS nesting */
+	/* Check propierts on the site caniuse.com */
+	& .main-container {
+		max-width: 33rem;
+		margin-left: auto;
+	}
+}
+
+aside {
+	background-color: var(--surface-secondary);
+	padding: 4rem;
+
+	& .aside-container {
+		max-width: 31rem;
+	}
+}
